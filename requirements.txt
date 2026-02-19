@@ -1,3 +1,6 @@
-anthropic>=0.45.0
+mcp>=1.0.0
 duckduckgo-search>=7.0.0
+
+# Only needed for the command-line agent (agent.py), not for the Claude Desktop MCP server
+anthropic>=0.45.0
 rich>=13.0.0
