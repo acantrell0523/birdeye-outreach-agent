@@ -1,0 +1,3 @@
+anthropic>=0.45.0
+duckduckgo-search>=7.0.0
+rich>=13.0.0
