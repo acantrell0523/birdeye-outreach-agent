@@ -243,16 +243,6 @@ python agent.py "C:\Users\You\Downloads\my_accounts.csv"
 python agent.py my_accounts.csv --limit 5
 ```
 
-Approximate cost:
-
-| Companies | Approx. Cost |
-|-----------|-------------|
-| 10        | ~$0.10      |
-| 50        | ~$0.50      |
-| 100       | ~$1.00      |
-
-Based on Claude Opus 4.6 at $5/1M input, $25/1M output tokens.
-
 ---
 
 ## Project Structure
