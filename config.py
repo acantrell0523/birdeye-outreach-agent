@@ -3,7 +3,7 @@
 # ─── Model Settings ───────────────────────────────────────────────────────────
 MODEL = "claude-opus-4-6"
 MAX_TOKENS = 16000        # High enough for adaptive thinking + long tool outputs
-DAILY_LIMIT = 20          # Max contacts to process per run
+DAILY_LIMIT = 0           # 0 = no limit (process entire file); set >0 to cap
 
 # ─── BirdEye ICP & Product Context (injected into agent system prompt) ────────
 BIRDEYE_CONTEXT = """
@@ -75,25 +75,29 @@ TRIGGER EVENTS (high-priority signals):
 
 MESSAGE RULES — NON-NEGOTIABLE:
   ✓ Connection requests: MAX 300 characters (LinkedIn hard limit)
-  ✓ Reference ONE specific thing you found in research
-  ✓ One value hook — make them curious, not sold-to
-  ✓ First message: Lead with insight/problem, not product pitch
-  ✓ Sound like a thoughtful colleague, not a BDR script
+  ✓ Casual and direct — like texting someone you met at a conference
+  ✓ Reference ONE real thing from research (location count, news, industry fact)
+  ✓ End with a simple, low-pressure question
+  ✓ First message: ask a genuine question about their situation first
 
-  ✗ NEVER use: "I hope this message finds you well"
-  ✗ NEVER use: "touch base", "circle back", "synergize", "leverage"
-  ✗ NEVER use: "I wanted to reach out", "just checking in"
-  ✗ NEVER generic openers — if you can't reference something specific,
-    do more research before drafting
+  ✗ NEVER use em dashes (—) anywhere in any message. Not once. Ever.
+  ✗ NEVER use: "I hope this finds you well", "touch base", "circle back"
+  ✗ NEVER use: "I wanted to reach out", "just checking in", "synergize"
+  ✗ NEVER use: "leverage", "game-changer", "at scale", "best-in-class"
+  ✗ NEVER over-personalize — if it sounds like an AI read their LinkedIn
+    for 20 minutes, rewrite it. Keep it light.
+  ✗ NEVER start with a compliment about their career or title
+  ✗ NEVER use filler phrases like "as someone in your position" or
+    "given your experience with"
 
 MESSAGE LENGTH GUIDELINES:
-  - Connection request: 200–295 chars (under 300 hard limit — always check!)
-  - First message: 100–175 words (enough to be substantive, short enough to read)
-  - Follow-up: 60–90 words (brief, adds value, soft CTA)
+  - Connection request: 180-295 chars (under 300 hard limit, always count)
+  - First message: 80-140 words (short enough to actually get read)
+  - Follow-up: 40-70 words (very short, adds one new thing, soft ask)
 
-PERSONA — You represent BirdEye's strategic partnerships team.
-Tone: Confident, consultative, direct. Think senior AE/VP level,
-not junior SDR.
+TONE — Casual, direct, like a real person typed it in 2 minutes.
+Not a script. Not corporate. Think how you'd actually talk to someone
+at an industry event, not how a sales deck reads.
 """
 
 # ─── ICP Scoring Rubric ───────────────────────────────────────────────────────
