@@ -1,6 +1,6 @@
 # BirdEye LinkedIn Outreach Agent
 
-Give it your Sales Navigator account list. It finds the right marketing contact at each company, researches them, scores ICP fit, and writes connection requests and messages you can send directly. You click send. The agent does everything else.
+Give it your Account list. It finds the right marketing contact at each company, researches them, scores ICP fit, and writes connection requests and messages you can send directly. You click send. The agent does everything else.
 
 Works inside **Claude Desktop**, Cursor, or any AI tool that supports MCP. No command line required. No per-use cost.
 
@@ -105,7 +105,7 @@ Close Claude Desktop completely and reopen it. You'll see a small hammer icon at
 
 ### Step 5 — Run it
 
-1. Export your Sales Navigator account list as a CSV
+1. Export your Account list as a CSV
 2. Open Claude Desktop
 3. Type this (paste in your actual file path):
 
